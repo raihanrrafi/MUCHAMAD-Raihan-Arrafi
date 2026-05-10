@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <title>Stok Bahan Ajar</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="navbar">
+        <a href="dashboard.html" class="nav-item">Kembali ke Dashboard</a>
+    </header>
+
+    <main class="stok-container">
+        <h2>Informasi Bahan Ajar</h2>
+        <p>Peragaan Bahan Ajar</p>
+
+        <button id="tambahStokBtn" class="add-btn">Tambah Stok Baru</button>
+
+        <div id="addStokForm" class="form-card" style="display: none;">
+            <h3>Tambah Stok Baru</h3>
+            <input type="text" id="inputKodeLokasi" placeholder="Kode Lokasi" required>
+            <input type="text" id="inputKodeBarang" placeholder="Kode Barang" required>
+            <input type="text" id="inputNamaBarang" placeholder="Nama Barang" required>
+            <input type="text" id="inputJenisBarang" placeholder="Jenis Barang" required>
+            <input type="number" id="inputEdisi" placeholder="Edisi" required>
+            <input type="number" id="inputStok" placeholder="Stok" required>
+            <button id="submitStokBtn">Simpan Data Stok</button>
+        </div>
+
+        <div id="stokList" class="data-list"></div>
+    </main>
+
+    <script src="js/data1.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
